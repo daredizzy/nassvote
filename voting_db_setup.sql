@@ -1,0 +1,34 @@
+
+CREATE DATABASE IF NOT EXISTS voting_db;
+USE voting_db;
+
+CREATE TABLE IF NOT EXISTS admin_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS contestants (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  photo VARCHAR(255),
+  votes INT DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS voters (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(20),
+  contestant_id INT,
+  paid TINYINT DEFAULT 0,
+  payment_ref VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE voters
+ADD COLUMN vote_quantity INT NOT NULL;
+
+ALTER TABLE voters ADD COLUMN vote_quantity INT NOT NULL;
+ALTER TABLE contestants ADD COLUMN photo VARCHAR(255) NOT NULL;
+

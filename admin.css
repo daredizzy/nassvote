@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Style */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  /* Dashboard Container */
+  .container {
+    background: #fff;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    color: #6a11cb;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  table th {
+    background-color: #6a11cb;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+  
+  table tr:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Action Link */
+  a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* No Contestants Message */
+  .no-contestants {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
